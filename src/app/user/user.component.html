@@ -1,6 +1,7 @@
 <div>
-    <button>
-        <img src="assets/users/{{selectedUser.avatar}}"/>
-        <span>{{selectedUser.name}}</span>
+    <button (click)="onSelectUser()">
+        <!-- <img [src]="'assets/users/'+selectedUser.avatar"[alt]="selectedUser.name"/>property Binding -->
+        <img [src]="imagePath"[alt]="selectedUser.name"/>   <!--property Binding-->
+        <span>{{selectedUser.name}}</span><!--string interpolation-->
     </button>
 </div>
